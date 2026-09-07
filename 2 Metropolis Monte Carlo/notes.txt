@@ -1,0 +1,12 @@
+What is the difference between Week1 Markow chains and Week2 Metropolis Monte carlo Markow chains
+
+In week 1:  Tij' was a matrix containing the probabilites of transitioning from i to j, which determined where the states moved.
+
+In week 2:  Tij is a proposal distribution, with probabilites of the transition being proposed. 
+            Afterwards, we accept that transition with an acceptence probability Aij.
+
+
+Tij' = Tij*Aij  for i != j
+Tij' = 1 - sum_{i!=j} Tij*Aij  for i = j
+
+So the diagonal is the probability of staying.
